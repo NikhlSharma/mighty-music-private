@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js')
-const embed = require("../../paras/embed")
+//const embed = require("../../paras/embed")
 module.exports = {
   name: "pause",
   vcOnly: true,
