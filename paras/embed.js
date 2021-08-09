@@ -1,4 +1,4 @@
-/*const { MessageEmbed } = require("discord.js");
+const { MessageEmbed } = require("discord.js");
 module.exports = async (text, channel) => {
    
     let embed = new MessageEmbed()
@@ -7,4 +7,4 @@ module.exports = async (text, channel) => {
   .setDescription(" " +""+ text);
 
     await channel.send(embed)
-}*/
+}
