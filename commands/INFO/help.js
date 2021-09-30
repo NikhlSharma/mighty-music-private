@@ -1,25 +1,19 @@
-const discord  =  require("discord.js")
+const { MessageEmbed } = require("discord.js")
+
 module.exports = {
-  name: "help",
-   botPermission: ["EMBED_LINKS", "READ_MESSAGE_HISTORY","USE_EXTERNAL_EMOJIS","ADD_REACTIONS"],
- 
-  run: async (client,message,args) => { 
-    
-    const embed = new discord.MessageEmbed()
-    .setColor("RANDOM")
- 
- .setURL(``)
-.setDescription(`
+	name: "help", 
+	run: async (client, message, args) => {
 
-***Commands***
-"\clear,join,leave,loop,nowplaying,pause,play,queue,remove,resume,search,skip,,stop,volume\"
+ let embed = new MessageEmbed()
+ .setTitle('COMMANDS')
+ .setDescription(`
+ <a:arrow2:891266124082204705> **Everyone commands
+ **play,join,clear,leave,loop,move,queue,now-playing,pause,previous,remove,resume,search,seek,skip.volume
 
-**Other**
-\"ping\"
+ <a:arrow2:891266124082204705> **Info commands**
+  ping,help
+ `)
 
-**Advance**
-\"nightcore\"
-`)
 message.channel.send(embed)
   }
-}
+};
