@@ -1,4 +1,5 @@
 const discord = require("discord.js");
+const config = require(`./config.json`)
 const client = new discord.Client({
   disableEveryone: true
 })
@@ -45,4 +46,4 @@ mongoose.connection.on('disconnected', () => {
   console.log('Mongoose disconnected');
 });
 
-client.login(process.env.TOKEN);
+client.login(process.config.TOKEN);
