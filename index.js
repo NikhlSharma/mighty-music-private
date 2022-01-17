@@ -45,4 +45,4 @@ mongoose.connection.on('disconnected', () => {
   console.log('Mongoose disconnected');
 });
 
-client.login("ODcxMzM1ODYzMDgxMTIzODcw.YQZ0wg.ZV_YJT9LC6sbfjgBR9KyhinWHvs");
+client.login(process.env.TOKEN);
